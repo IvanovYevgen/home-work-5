@@ -15,7 +15,7 @@ import ua.lviv.lgs.utils.ConnectionUtils;
 public class UserDaoImpl implements UserDao {
 
 	private static String READ_ALL = "select * from user";
-	private static String CREATE = "insert into user(`email`,`first_name`, `last_name`, `role`) values (?,?,?,?)";
+	private static String CREATE = "insert into user(email,first_name, last_name, role) values (?,?,?,?)";
 	private static String READ_BY_ID = "select * from user where id =?";
 	private static String UPDATE_BY_ID = "update user set email=?, first_name = ?, last_name = ?, role=?  where id = ?";
 	private static String DELETE_BY_ID = "delete from user where id=?";
